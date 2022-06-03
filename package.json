@@ -1,0 +1,32 @@
+{
+  "name": "portfolio_nodejs_aws",
+  "version": "1.0.0",
+  "description": "Build a simple portfolio NodeJS based web app that displays the profile image, name, some text with the experience, and a 5 tweet list of the user's Twitter timeline.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanayala/portfolio_nodejs_aws.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joanayala/portfolio_nodejs_aws/issues"
+  },
+  "homepage": "https://github.com/joanayala/portfolio_nodejs_aws#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
