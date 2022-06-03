@@ -28,6 +28,10 @@ const getUserTweets = async (req, res, next) => {
           source: tweet.source,
           lang: tweet.lang,
           location: tweet.user.location,
+          profile_banner_url: tweet.user.profile_banner_url,
+          profile_background_color: tweet.user.profile_background_color,
+          profile_background_image_url: tweet.user.profile_background_image_url,
+          profile_image_url_https: tweet.user.profile_image_url_https,
       }
   }
 };
