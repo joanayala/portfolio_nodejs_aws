@@ -12,7 +12,7 @@ const getUserTweets = async (req, res, next) => {
     strictSSL:            true,     // optional - requires SSL certificates to be valid.
   })
   
-  const params = {screen_name: 'Cristiano Ronaldo' , count: 10};
+  const params = {screen_name: user_name, count: 10};
   T.get('statuses/user_timeline', params, function(error, tweets, response) {
     const allTweets = tweets.map(tweet => tweetsToUI(tweet));
     console.log(allTweets);
