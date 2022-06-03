@@ -21,7 +21,13 @@ const getUserTweets = async (req, res, next) => {
   
   function tweetsToUI(tweet) {
       return {
-          name: tweet.user.location,
+          id: tweet.id,
+          created_at: tweet.created_at,
+          text: tweet.text,
+          retweet_count: tweet.retweet_count,
+          source: tweet.source,
+          lang: tweet.lang,
+          location: tweet.user.location,
       }
   }
 };
